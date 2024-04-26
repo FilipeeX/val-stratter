@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --astra: url("https://static.wikia.nocookie.net/valorant/images/0/08/Astra_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180525");
+    --brimstone: url("https://static.wikia.nocookie.net/valorant/images/4/4d/Brimstone_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180558");
+    --clove: url("https://static.wikia.nocookie.net/valorant/images/3/30/Clove_icon.png/revision/latest/scale-to-width-down/75?cb=20240326163719");
+    --harbor: url("https://static.wikia.nocookie.net/valorant/images/f/f3/Harbor_icon.png/revision/latest/scale-to-width-down/75?cb=20230523161242");
+    --omen: url("https://static.wikia.nocookie.net/valorant/images/b/b0/Omen_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180801");
+    --viper: url("https://static.wikia.nocookie.net/valorant/images/5/5f/Viper_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180950");
+    --iso: url("https://static.wikia.nocookie.net/valorant/images/b/b7/Iso_icon.png/revision/latest/scale-to-width-down/75?cb=20231031131018");
+    --jett: url("https://static.wikia.nocookie.net/valorant/images/3/35/Jett_icon.png/revision/latest/scale-to-width-down/75?cb=20230909031447");
+    --neon: url("https://static.wikia.nocookie.net/valorant/images/d/d0/Neon_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180744");
+    --phoenix: url("https://static.wikia.nocookie.net/valorant/images/1/14/Phoenix_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161016");
+    --raze: url("https://static.wikia.nocookie.net/valorant/images/9/9c/Raze_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180834");
+    --reyna: url("https://static.wikia.nocookie.net/valorant/images/b/b0/Reyna_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161102");
+    --yoru: url("https://static.wikia.nocookie.net/valorant/images/d/d4/Yoru_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161616");
+    --brech: url("https://static.wikia.nocookie.net/valorant/images/5/53/Breach_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180542");
+    --fade: url("https://static.wikia.nocookie.net/valorant/images/a/a6/Fade_icon.png/revision/latest/scale-to-width-down/75?cb=20230523161332");
+    --gekko: url("https://static.wikia.nocookie.net/valorant/images/6/66/Gekko_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180641");
+    --kayo: url("https://static.wikia.nocookie.net/valorant/images/f/f0/KAYO_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180711");
+    --skye: url("https://static.wikia.nocookie.net/valorant/images/3/33/Skye_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161546");
+    --sova: url("https://static.wikia.nocookie.net/valorant/images/4/49/Sova_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180933");
+    --chamber: url("https://static.wikia.nocookie.net/valorant/images/0/09/Chamber_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180616");
+    --cypher: url("https://static.wikia.nocookie.net/valorant/images/8/88/Cypher_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180623");
+    --deadlock: url("https://static.wikia.nocookie.net/valorant/images/e/eb/Deadlock_icon.png/revision/latest/scale-to-width-down/75?cb=20230627132804");
+    --killjoy: url("https://static.wikia.nocookie.net/valorant/images/1/15/Killjoy_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180727");
+    --sage: url("https://static.wikia.nocookie.net/valorant/images/7/74/Sage_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161159");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #03031a;
+    color: white;
+    font-size: 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: auto auto;
+    width: fit-content;
+}
+
+#map-selection {
+    display: block;
+    margin-top: 18vh;
+}
+#agent-selection {
+    display: none;
+    margin-top: 24vh;
+}
+
+.maps {
+    margin-top: 40px;
+}
+
+.select-map-button {
+    position: absolute;
+    border: none;
+    width: 270px;
+    height: 66px;   
+    transition: 150ms;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+}
+
+.select-map-button:hover {
+    top: 3px;
+}
+
+.select-map-button:active {
+    top: 5px;
+}
+
+.select-map-container {
+    position: relative;
+    margin: 10px;
+    width: 270px;
+    height: 66px;
+}
+
+#select-map-button--ascent {
+    background: url("../resources/buttons/ascent.png");
+}
+#select-map-button--bind {
+    background: url("../resources/buttons/bind.png");
+}
+#select-map-button--breeze {
+    background: url("../resources/buttons/breeze.png");
+}
+#select-map-button--icebox {
+    background: url("../resources/buttons/icebox.png");
+}
+#select-map-button--lotus {
+    background: url("../resources/buttons/lotus.png");
+}
+#select-map-button--split {
+    background: url("../resources/buttons/split.png");
+}
+#select-map-button--sunset {
+    background: url("../resources/buttons/sunset.png");
+}
+
+#agents-to-select-container {
+    margin-top: 60px;
+}
+
+.agents-to-select {
+    margin: 10px 0;
+}
+
+.agent-to-select-container {
+    width: 75px;
+    height: 75px;
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+}
+
+.agent-to-select {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 250ms;
+}
+
+.agent-to-select:hover {
+    top: 3px;
+}
+.agent-to-select:active {
+    top: 5px;
+}
+
+#agent-to-select--astra {
+    background: var(--astra);
+}
+#agent-to-select--brimstone {
+    background: var(--brimstone);
+}
+#agent-to-select--clove {
+    background: var(--clove);
+}
+#agent-to-select--harbor {
+    background: var(--harbor);
+}
+#agent-to-select--omen {
+    background: var(--omen);
+}
+#agent-to-select--viper {
+    background: var(--viper);
+}
+#agent-to-select--iso {
+    background: var(--iso);
+}
+#agent-to-select--jett {
+    background: var(--jett);
+}
+#agent-to-select--neon {
+    background: var(--neon);
+}
+#agent-to-select--phoenix {
+    background: var(--phoenix);
+}
+#agent-to-select--raze {
+    background: var(--raze);
+}
+#agent-to-select--reyna {
+    background: var(--reyna);
+}
+#agent-to-select--yoru {
+    background: var(--yoru);
+}
+#agent-to-select--breach {
+    background: var(--brech);
+}
+#agent-to-select--fade {
+    background: var(--fade);
+}
+#agent-to-select--gekko {
+    background: var(--gekko);
+}
+#agent-to-select--kayo {
+    background: var(--kayo);
+}
+#agent-to-select--skye {
+    background: var(--skye);
+}
+#agent-to-select--sova {
+    background: var(--sova);
+}
+#agent-to-select--chamber {
+    background: var(--chamber);
+}
+#agent-to-select--cypher {
+    background: var(--cypher);
+}
+#agent-to-select--deadlock {
+    background: var(--deadlock);
+}
+#agent-to-select--killjoy {
+    background: var(--killjoy);
+}
+#agent-to-select--sage {
+    background: var(--sage);
+}

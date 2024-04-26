@@ -4,24 +4,80 @@
 <head>
   <meta charset="UTF-8" />
   <title>Valorant Stratter</title>
-  <link rel="stylesheet" href="styles/.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="resources/icons/main.png" type="image/x-icon">
 </head>
 
 
 <body>
-  
-    <h3>Select map</h3>
-    <button class="select-map-button" id="select-map-button--bind">Bind</button>
-    <button class="select-map-button" id="select-map-button--breeze">Breeze</button>
-    <button class="select-map-button" id="select-map-button--fracture">Fracture</button>
-    <button class="select-map-button" id="select-map-button--haven">Haven</button>
-    <button class="select-map-button" id="select-map-button--icebox">Icebox</button>
-    <button class="select-map-button" id="select-map-button--lotus">Lotus</button>
-    <button class="select-map-button" id="select-map-button--pearl">Pearl</button>
-    <button class="select-map-button" id="select-map-button--split">Split</button>
-    <button class="select-map-button" id="select-map-button--sunset">Sunset</button>
 
-    <script src="/scripts/script.js"></script>
+    <div class="container" id="map-selection">
+      <h3>Select the map</h3>
+      <div class="maps">
+        <div class="select-map-container">
+          <button class="select-map-button" id="select-map-button--ascent" onclick="ascent()"></button>
+        </div>
+        <div class="select-map-container">
+          <button class="select-map-button" id="select-map-button--bind" onclick="bind()"></button>
+        </div>
+        <div class="select-map-container">
+         <button class="select-map-button" id="select-map-button--breeze" onclick="breeze()"></button>
+        </div>
+        <div class="select-map-container">
+          <button class="select-map-button" id="select-map-button--icebox" onclick="icebox()"></button>
+        </div>
+        <div class="select-map-container">
+          <button class="select-map-button" id="select-map-button--lotus" onclick="lotus()"></button>
+        </div>
+        <div class="select-map-container">
+          <button class="select-map-button" id="select-map-button--split" onclick="split()"></button>
+        </div>
+        <div class="select-map-container">
+          <button class="select-map-button" id="select-map-button--sunset" onclick="sunset()"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="agent-selection">
+      <h3>Select the enemy agents</h3>
+      <div id="agents-to-select-container">
+        <ul class="agents-to-select" id="agents-to-select--controllers">
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--astra" onclick="astra()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--brimstone" onclick="brimstone()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--clove" onclick="clove()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--harbor" onclick="harbor()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--omen" onclick="omen()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--viper" onclick="viper()"></div></li>
+        </ul>
+        <ul class="agents-to-select" id="agents-to-select--duedivsts">
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--iso" onclick="iso()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--jett" onclick="jett()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--neon" onclick="neon()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--phoenix" onclick="phoenix()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--raze" onclick="raze()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--reyna" onclick="reyna()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--yoru" onclick="yoru()"></div></li>
+        </ul>
+        <ul class="agents-to-select" id="agents-to-select--initiators">
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--breach" onclick="breach()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--fade" onclick="fade()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--gekko" onclick="gekko()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--kayo" onclick="kayo()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--skye" onclick="skye()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--sova" onclick="sova()"></div></li>
+        </ul>
+        <ul class="agents-to-select" id="agents-to-select--sentinels">
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--chamber"  onclick="chamber()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--cypher" onclick="cypher()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--deadlock" onclick="deadlock()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--killjoy" onclick="killjoy()"></div></li>
+          <li class="agent-to-select-container"><div class="agent-to-select" id="agent-to-select--sage" onclick="sage()"></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="scripts/mapselection.js"></script>
+    <script src="scripts/agentselection.js"></script>
 </body>
 
 
