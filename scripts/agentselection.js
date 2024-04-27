@@ -1,5 +1,3 @@
-let strategyContainer = document.getElementById("strategy");
-
 let agents = [
     document.getElementById("agent-to-select--astra"),
     document.getElementById("agent-to-select--brimstone"),
@@ -41,6 +39,7 @@ function dissolveAgentSelection() {
 
     if (agentSelectionOpacity === 0) {
         agentSelectionContainer.style.display = "none";
+        window.requestAnimationFrame(makeStrategyAppear);
         return;
     }
 

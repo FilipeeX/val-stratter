@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
+
     --astra: url("https://static.wikia.nocookie.net/valorant/images/0/08/Astra_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180525");
     --brimstone: url("https://static.wikia.nocookie.net/valorant/images/4/4d/Brimstone_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180558");
     --clove: url("https://static.wikia.nocookie.net/valorant/images/3/30/Clove_icon.png/revision/latest/scale-to-width-down/75?cb=20240326163719");
@@ -25,6 +26,14 @@
     --deadlock: url("https://static.wikia.nocookie.net/valorant/images/e/eb/Deadlock_icon.png/revision/latest/scale-to-width-down/75?cb=20230627132804");
     --killjoy: url("https://static.wikia.nocookie.net/valorant/images/1/15/Killjoy_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180727");
     --sage: url("https://static.wikia.nocookie.net/valorant/images/7/74/Sage_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161159");
+
+    --ascent: url("../resources/map-layouts/ascent.png");
+    --bind: url("../resources/map-layouts/bind.png");
+    --breeze: url("../resources/map-layouts/breeze.png");
+    --icebox: url("../resources/map-layouts/icebox.png");
+    --lotus: url("../resources/map-layouts/lotus.png");
+    --split: url("../resources/map-layouts/split.png");
+    --sunset: url("../resources/map-layouts/sunset.png");
 }
 
 * {
@@ -56,6 +65,10 @@ h3 {
 #agent-selection {
     display: none;
     margin-top: 24vh;
+}
+#strategy {
+    display: none;
+    margin-top: 4vh;
 }
 
 .maps {
@@ -215,4 +228,47 @@ h3 {
 }
 #agent-to-select--sage {
     background: var(--sage);
+}
+
+.map {
+    position: relative;
+    background-repeat: no-repeat;
+    margin-top: 3vh;
+}
+
+#map--ascent {
+    background: var(--ascent);
+    width: 752px;
+    height: 804px;
+}
+#map--bind {
+    background: var(--bind);
+    width: 780px;
+    height: 819px;
+}
+#map--breeze {
+    background: var(--breeze);
+    width: 803px;
+    height: 787px;
+}
+#map--icebox {
+    background: var(--icebox);
+    width: 716px;
+    height: 811px;
+}
+#map--lotus {
+    background: var(--lotus);
+    width: 795px;
+    height: 706px;
+    margin-top: calc(3vh + 75px);
+}
+#map--split {
+    background: var(--split);
+    width: 805px;
+    height: 757px;
+}
+#map--sunset {
+    background: var(--sunset);
+    width: 773px;
+    height: 816px;
 }
