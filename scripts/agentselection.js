@@ -1,3 +1,5 @@
+let strategyContainer = document.getElementById("strategy");
+
 let agents = [
     document.getElementById("agent-to-select--astra"),
     document.getElementById("agent-to-select--brimstone"),
@@ -28,22 +30,26 @@ let agents = [
 var selected = [];
 var dissolving = [];
 
+let selectionDone = false;
 
-function getAgentElemByAgentId(agent) {
-    return agents[agent];
+
+// let agentSelectionOpacity = 1
+function dissolveAgentSelection() {
+    
+    agentSelectionOpacity = roundTo(agentSelectionOpacity - .1, 1);
+    agentSelectionContainer.style.opacity = agentSelectionOpacity;
+
+    if (agentSelectionOpacity === 0) {
+        agentSelectionContainer.style.display = "none";
+        return;
+    }
+
+    window.requestAnimationFrame(dissolveAgentSelection);
 }
 
 
-function removeItemAll(arr, value) {
-    var i = 0;
-    while (i < arr.length) {
-      if (arr[i] === value) {
-        arr.splice(i, 1);
-      } else {
-        ++i;
-      }
-    }
-    return arr;
+function getAgentElemByAgentId(agent) {
+    return agents[agent];
 }
 
 
@@ -61,7 +67,12 @@ function dissolveAgents() {
         } else {
             agentElem.style.opacity = 0;
             agentElem.style.display = "none";
-            dissolving = removeItemAll(dissolving, agent)
+            dissolving = removeItemAll(dissolving, agent);
+
+            if (selected.length >= 5 && dissolving.length < 2 && !selectionDone) {
+                selectionDone = true;
+                window.requestAnimationFrame(dissolveAgentSelection);
+            }
         }
     }
 
@@ -69,19 +80,25 @@ function dissolveAgents() {
         return;
     }
 
-    window.requestAnimationFrame(dissolveAgents)
+    window.requestAnimationFrame(dissolveAgents);
 }
 
 
 function selectAgent(agent) {
+
+    if (selected.length >= 5 || selected.includes(agent) || dissolving.includes(agent)) {
+        return;
+    }
+
     selected.push(agent);
     dissolving.push(agent);
-    window.requestAnimationFrame(dissolveAgents)
+
+    window.requestAnimationFrame(dissolveAgents);
 }
 
 
 function astra() {
-    selectAgent(0);
+    selectAgent(0)
 }
 
 function brimstone(){

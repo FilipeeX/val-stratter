@@ -11,15 +11,14 @@ function makeAgentSelectionAppear() {
         agentSelectionContainer.style.display = "block";
     }
 
-    agentSelectionOpacity += 10;
-    agentSelectionContainer.style.opacity = agentSelectionOpacity + "%";
+    agentSelectionOpacity = roundTo(agentSelectionOpacity + .1, 1);
+    agentSelectionContainer.style.opacity = agentSelectionOpacity;
 
-    if (agentSelectionOpacity === 100) {
+    if (agentSelectionOpacity === 1) {
         return;
     }
 
     window.requestAnimationFrame(makeAgentSelectionAppear);
-
 }
 
 
