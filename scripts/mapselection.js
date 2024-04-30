@@ -1,7 +1,7 @@
 let mapSelectionContainer = document.getElementById("map-selection")
 let agentSelectionContainer = document.getElementById("agent-selection")
 
-var map = undefined;
+let map = undefined;
 
 
 let agentSelectionOpacity = 0
@@ -38,8 +38,8 @@ function dissolveMapSelection() {
 }
 
 
-function selectMap(map) {
-    this.map = map
+function selectMap(mapa) {
+    map = mapa
     requestAnimationFrame(dissolveMapSelection)
 }
 

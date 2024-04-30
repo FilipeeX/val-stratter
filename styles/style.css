@@ -2,30 +2,30 @@
 
 :root {
 
-    --astra: url("https://static.wikia.nocookie.net/valorant/images/0/08/Astra_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180525");
-    --brimstone: url("https://static.wikia.nocookie.net/valorant/images/4/4d/Brimstone_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180558");
-    --clove: url("https://static.wikia.nocookie.net/valorant/images/3/30/Clove_icon.png/revision/latest/scale-to-width-down/75?cb=20240326163719");
-    --harbor: url("https://static.wikia.nocookie.net/valorant/images/f/f3/Harbor_icon.png/revision/latest/scale-to-width-down/75?cb=20230523161242");
-    --omen: url("https://static.wikia.nocookie.net/valorant/images/b/b0/Omen_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180801");
-    --viper: url("https://static.wikia.nocookie.net/valorant/images/5/5f/Viper_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180950");
-    --iso: url("https://static.wikia.nocookie.net/valorant/images/b/b7/Iso_icon.png/revision/latest/scale-to-width-down/75?cb=20231031131018");
-    --jett: url("https://static.wikia.nocookie.net/valorant/images/3/35/Jett_icon.png/revision/latest/scale-to-width-down/75?cb=20230909031447");
-    --neon: url("https://static.wikia.nocookie.net/valorant/images/d/d0/Neon_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180744");
-    --phoenix: url("https://static.wikia.nocookie.net/valorant/images/1/14/Phoenix_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161016");
-    --raze: url("https://static.wikia.nocookie.net/valorant/images/9/9c/Raze_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180834");
-    --reyna: url("https://static.wikia.nocookie.net/valorant/images/b/b0/Reyna_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161102");
-    --yoru: url("https://static.wikia.nocookie.net/valorant/images/d/d4/Yoru_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161616");
-    --brech: url("https://static.wikia.nocookie.net/valorant/images/5/53/Breach_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180542");
-    --fade: url("https://static.wikia.nocookie.net/valorant/images/a/a6/Fade_icon.png/revision/latest/scale-to-width-down/75?cb=20230523161332");
-    --gekko: url("https://static.wikia.nocookie.net/valorant/images/6/66/Gekko_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180641");
-    --kayo: url("https://static.wikia.nocookie.net/valorant/images/f/f0/KAYO_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180711");
-    --skye: url("https://static.wikia.nocookie.net/valorant/images/3/33/Skye_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161546");
-    --sova: url("https://static.wikia.nocookie.net/valorant/images/4/49/Sova_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180933");
-    --chamber: url("https://static.wikia.nocookie.net/valorant/images/0/09/Chamber_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180616");
-    --cypher: url("https://static.wikia.nocookie.net/valorant/images/8/88/Cypher_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180623");
-    --deadlock: url("https://static.wikia.nocookie.net/valorant/images/e/eb/Deadlock_icon.png/revision/latest/scale-to-width-down/75?cb=20230627132804");
-    --killjoy: url("https://static.wikia.nocookie.net/valorant/images/1/15/Killjoy_icon.png/revision/latest/scale-to-width-down/75?cb=20230523180727");
-    --sage: url("https://static.wikia.nocookie.net/valorant/images/7/74/Sage_icon.png/revision/latest/scale-to-width-down/75?cb=20230606161159");
+    --astra: url("../resources/agents/astra.webp");
+    --brimstone: url("../resources/agents/brim.webp");
+    --clove: url("../resources/agents/clove.webp");
+    --harbor: url("../resources/agents/harbor.webp");
+    --omen: url("../resources/agents/omen.webp");
+    --viper: url("../resources/agents/viper.webp");
+    --iso: url("../resources/agents/iso.webp");
+    --jett: url("../resources/agents/jett.webp");
+    --neon: url("../resources/agents/neon.webp");
+    --phoenix: url("../resources/agents/phoenix.webp");
+    --raze: url("../resources/agents/raze.webp");
+    --reyna: url("../resources/agents/reyna.webp");
+    --yoru: url("../resources/agents/yoru.webp");
+    --breach: url("../resources/agents/breach.webp");
+    --fade: url("../resources/agents/fade.webp");
+    --gekko: url("../resources/agents/gekko.webp");
+    --kayo: url("../resources/agents/kayo.webp");
+    --skye: url("../resources/agents/skye.webp");
+    --sova: url("../resources/agents/sova.webp");
+    --chamber: url("../resources/agents/chamber.webp");
+    --cypher: url("../resources/agents/cypher.webp");
+    --deadlock: url("../resources/agents/deadlock.webp");
+    --killjoy: url("../resources/agents/killjoy.webp");
+    --sage: url("../resources/agents/sage.webp");
 
     --ascent: url("../resources/map-layouts/ascent.png");
     --bind: url("../resources/map-layouts/bind.png");
@@ -34,6 +34,8 @@
     --lotus: url("../resources/map-layouts/lotus.png");
     --split: url("../resources/map-layouts/split.png");
     --sunset: url("../resources/map-layouts/sunset.png");
+
+    --agent-size: 30px;
 }
 
 * {
@@ -197,7 +199,7 @@ h3 {
     background: var(--yoru);
 }
 #agent-to-select--breach {
-    background: var(--brech);
+    background: var(--breach);
 }
 #agent-to-select--fade {
     background: var(--fade);
@@ -271,4 +273,21 @@ h3 {
     background: var(--sunset);
     width: 773px;
     height: 816px;
+}
+
+.agent {
+    position: absolute;
+    width: var(--agent-size);
+    height: var(--agent-size);
+    z-index: 2;
+}
+
+.card {
+    background-color: rgb(255, 50, 50);
+    border-radius: 3px;
+    width: calc(var(--agent-size) + 4px);
+    height: calc(var(--agent-size) + 4px);
+    position: absolute;
+    z-index: 1;
+    filter: drop-shadow(0px 4px 3px #000);
 }
