@@ -1,9 +1,8 @@
 {
-    "ascent": [
-        {
-            "agent": "jett",
+    "ascent": {
+        "jett": {
             "x": 200,
             "y": 200
         }
-    ]
+    }
 }

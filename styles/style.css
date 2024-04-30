@@ -35,7 +35,7 @@
     --split: url("../resources/map-layouts/split.png");
     --sunset: url("../resources/map-layouts/sunset.png");
 
-    --agent-size: 30px;
+    --agent-size: 20px;
 }
 
 * {
